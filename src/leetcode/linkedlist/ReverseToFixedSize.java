@@ -1,4 +1,4 @@
-package leetcode.array.linkedlist;
+package leetcode.linkedlist;
 
 public class ReverseToFixedSize {
 

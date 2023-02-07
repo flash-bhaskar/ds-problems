@@ -41,7 +41,7 @@ public class CombinationOfSum {
         int sum = 8;
         int[] a = {2,3,5};
         int[] nums = {1,2,3};
-        combinationSum4(nums, 4);
+        combinationSum4M2(nums, 4);
 
         List<List<Integer>> ans = combinationSum(a, sum);
         List<List<Integer>> an = combinationSum2(a, sum);
@@ -170,5 +170,23 @@ public class CombinationOfSum {
         return map.get(target);
     }
 
+    public static int combinationSum4M2(int[] nums, int target){
+        if(nums==null || nums.length==0)
+            return 0;
+
+        int[] dp = new int[target+1];
+
+        dp[0]=1;
+
+        for(int i=0; i<=target; i++){
+            for(int num: nums){
+                if(i + num<=target){
+                    dp[i + num] = dp[i + num] + dp[i];
+                }
+            }
+        }
+
+        return dp[target];
+    }
 
 }

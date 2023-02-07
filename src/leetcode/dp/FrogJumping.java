@@ -1,4 +1,4 @@
-package leetcode.array.dp;
+package leetcode.dp;
 
 public class FrogJumping {
 

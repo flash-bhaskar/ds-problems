@@ -1,4 +1,4 @@
-package leetcode.array.treeorGraph;
+package leetcode.treeorGraph;
 
 public class AVLTree {
     NodeTree root;

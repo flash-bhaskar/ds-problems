@@ -1,4 +1,4 @@
-package leetcode.array.treeorGraph;
+package leetcode.treeorGraph;
 
 import java.util.ArrayList;
 import java.util.HashMap;
